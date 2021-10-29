@@ -8,6 +8,8 @@ OOPS concept using kettle class
 
 class Kettle:
 
+    power_source = "electricity"
+
     def __init__(self,make,price):
         self.make = make
         self.price = price
@@ -32,6 +34,20 @@ print(preethi.on)
 Kettle.switchOn(preethi)
 print(preethi.on)
 
+print("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
+
+
+print(Kettle.power_source)
+print(kenwood.power_source)
+print(preethi.power_source)
+
+print("////////////////////")
+print("switching power source to gas ")
+
+Kettle.power_source = "gas"
+print(Kettle.power_source)
+print(kenwood.power_source)
+print(preethi.power_source)
 
 
 
